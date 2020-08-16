@@ -1,0 +1,269 @@
+
+body {
+    margin: 0;
+    background-color: #f2efe6;    
+    padding: 2em;
+    overflow-x: hidden;
+}
+/* 
+#page {
+    padding: 01.5em;
+} */
+
+.blue-bg {
+    background-color: rgba(141, 212, 244, .6);
+    margin: -2em -2em 0;
+    height: 35vh;
+    z-index: -1;
+}
+
+#logo h1 {
+    font-family: 'Permanent Marker';
+    color: #282828;
+    font-size: inherit;
+}
+
+h1.page-heading {
+    display: inline-block;
+    padding: 0 .5em;
+    font-family: 'DM Serif Display', serif;
+    font-size: 3em;
+    color: #fff;
+    background-color: #282828;
+}
+
+h1.page-heading.style2 {
+    color: #282828;
+    background-color: #f9ca3b;
+}
+
+h1.page-heading.style3 {
+    color: #f2efe6;
+    background-color: seagreen;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    color: #282828;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8em;
+}
+
+/* .custom-logo {
+    background-color: #fff;
+    display:  inline-block;
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    font-size: 4rem;
+    -webkit-box-shadow: 2px 3px 29px 2px rgba(0,0,0,0.39);
+-moz-box-shadow: 2px 3px 29px 2px rgba(0,0,0,0.39);
+box-shadow: 2px 3px 29px 2px rgba(0,0,0,0.39);
+    position: relative;
+} */
+
+#logo {
+    transition: 0.2s;
+    font-size: 90px;
+}
+
+.custom-logo h1 {
+    display: inline;
+    margin: 0;
+}
+
+.site-header {
+    position: fixed;
+}
+
+
+/* BUBBLE SECTION */
+.bubble-wrap {
+    /* position: absolute;
+    right: 25%;
+    bottom: -25%; */    
+}
+
+.bubble-profile {
+    /* display: inline-block; */
+    float: right;
+    margin-right: 5%;
+    position: relative;
+    margin-top: 100px;
+}
+
+.profile-image {
+    width: 300px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    max-width: 100%;  
+    -webkit-box-shadow: 2px 3px 29px 2px rgba(0,0,0,0.39);
+    -moz-box-shadow: 2px 3px 29px 2px rgba(0,0,0,0.39);
+    box-shadow: 2px 3px 29px 2px rgba(0,0,0,0.39);
+    animation: float 6s ease-in-out infinite;
+}
+
+.bubble {
+    display: inline-block;
+    opacity: .5;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-box-shadow: 2px 3px 29px 2px rgba(0,0,0,0.39);
+    -moz-box-shadow: 2px 3px 29px 2px rgba(0,0,0,0.39);
+    box-shadow: 2px 3px 29px 2px rgba(0,0,0,0.39);
+}
+
+.bubble.one {
+    background-color: #fff;
+    width: 7em;
+    height: 7em;
+    bottom: 0;
+    left: 0;
+    animation: float3 9s ease-in-out infinite;
+}
+
+.bubble.two {
+    background-color: seagreen;
+    width: 5em;
+    height: 5em;
+    right: -15%;
+    top: 25%;
+    z-index: 1;
+    animation: float2 7s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float2 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-50px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float3 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-40px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.max-width {
+    max-width: 800px;
+    margin: auto;
+}
+
+.section-div {
+    display: inline-block;
+    height: 1px;
+    background-color: lightgrey;
+    width: 100%;
+    margin: 4em 0;
+}
+
+.resume-block ul {
+    padding-left: 4%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+}
+
+code {
+    font-size: 1.5em;
+}
+
+#my-work,
+#resume {
+    position: relative;
+}
+
+.nacho,
+.cash {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    transition: all 1s ease-in-out;
+    transition-delay: 1s;
+}
+
+.cash {
+    left: -100vw;
+}
+
+.nacho {
+    right: -100vw;
+}
+
+
+.nacho.show {
+    right: -20vw;
+    transition: all 1s ease-in-out;
+}
+
+.cash.show {
+    left: -20vw;
+    transition: all 1s ease-in-out;
+}
+
+
+
+/* WORK GALLERY */
+
+
+
+.work-item {
+    padding-top: 3em;
+}
+
+.work-item-header {
+    /* display: flex;
+    align-items: center; */
+    position: relative;
+}
+
+.work-title {
+    /* display: inline-block;
+    margin-left: -10em;*/
+    background-color: #fff; 
+    position: absolute;
+    top: 45%;
+    right: -3.5em;
+    padding: .5em 1.5em;
+}
+
+.work-image {
+    max-width: 100%;    
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .animation-element {
+        display: none;
+    }
+}
